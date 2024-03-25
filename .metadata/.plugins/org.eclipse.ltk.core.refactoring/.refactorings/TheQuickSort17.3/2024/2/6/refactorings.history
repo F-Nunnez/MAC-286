@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ArraysIns1.java&apos; to &apos;ArrayIns1.java&apos;&#x0D;&#x0A;- Original project: &apos;TheQuickSort17.3&apos;&#x0D;&#x0A;- Original element: &apos;ArraysIns1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ArrayIns1.java&apos;" description="Rename compilation unit &apos;ArraysIns1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{ArraysIns1.java" name="ArrayIns1.java" references="false" stamp="1707075299303" version="1.0"/>
+</session>

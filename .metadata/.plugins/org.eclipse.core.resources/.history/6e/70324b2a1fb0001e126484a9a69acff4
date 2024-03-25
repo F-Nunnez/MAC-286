@@ -1,0 +1,35 @@
+
+public class BankAccount {
+	private double balance; // account balance
+	
+	public BankAccount(double openingBalance) {
+		// constructor
+		if (openingBalance < 1 || openingBalance > 1000) {
+			System.out.println("Opening balance should be > 0 "+ "openingBalance:" + openingBalance);
+		}
+		balance = openingBalance;
+	}
+	
+	public void deposit(double amount) {
+		// makes deposit
+		if(amount < 1 || amount > 1000) {
+			System.out.println("Please enter an amount from 1...1000 "+"Input Amount: "+amount);
+		} else {			
+			balance = balance + amount;
+		}
+	}
+	
+	public void withdraw(double amount) {
+		// makes withdrawal
+		if(amount > balance) {
+			System.out.println("Insuficient balance "+ balance +" Input Amount:" +amount);
+			
+		}
+		balance = balance - amount;
+	}
+	
+	public void display() {
+		System.out.println("Balance=" + balance);
+	}
+
+} // end class BankAccount

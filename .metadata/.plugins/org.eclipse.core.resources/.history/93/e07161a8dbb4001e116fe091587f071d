@@ -1,0 +1,49 @@
+
+public class BubbleSortApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int maxSize = 100; // array size
+		ArrayBub arr; // reference to array
+		
+		arr = new ArrayBub(maxSize);
+		
+//		arr.insert(77);               // insert 10 items
+//		arr.insert(99);
+//		arr.insert(44);
+//		arr.insert(55);
+//		arr.insert(22);
+//		arr.insert(88);
+//		arr.insert(11);
+//		arr.insert(00);
+//		arr.insert(66);
+//		arr.insert(33);
+		
+		arr.display();
+		
+		//arr.bubbleSort(); // bubble sort them
+//		arr.oddEvenSort();
+//		arr.display();
+		
+		for(int j=0; j<maxSize; j++)           // fill array with 
+    	{                                   
+     	  // random numbers 
+  	      long n = (long)( java.lang.Math.random()*(maxSize-1) ); 
+          arr.insert(n); 
+  	    }
+      
+      System.out.println("Running Sort with numberSamples = " + maxSize);
+      long startTime = System.currentTimeMillis(); 
+//      arr.oddEvenSort();
+      arr.bubbleSort(); // bubble sort them
+      arr.display();
+      //arr.selectionSort(); // bubble sort them
+      //arr.insertionSort(); // bubble sort them
+      long endTime = System.currentTimeMillis();
+      System.out.println("Total execution time: " + (endTime-startTime)/1000 + "secs");
+//      arr.oddEvenSort();  // After this assignment is done you can try this
+		
+	}// end main
+
+} // end class BubbleSortApp

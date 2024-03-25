@@ -1,0 +1,28 @@
+
+public class BankAccount {
+	private double balance; // account balance
+	
+	public BankAccount(double openingBalance) {
+		// constructor
+		balance = openingBalance;
+	}
+	
+	public void deposit(double amount) {
+		// makes deposit
+		if(amount < 1) {
+			System.out.println("Please enter an amount from 1...1000");
+		} else {			
+			balance = balance + amount;
+		}
+	}
+	
+	public void withdraw(double amount) {
+		// makes withdrawal
+		balance = balance - amount;
+	}
+	
+	public void display() {
+		System.out.println("Balance=" + balance);
+	}
+
+} // end class BankAccount
